@@ -1,5 +1,5 @@
 function printMessage(msg){
-	var div = document.createElement('div');
+	let div = document.createElement('div');
 	div.innerHTML = msg;
 	document.getElementById('messages').appendChild(div);
 }
@@ -9,15 +9,15 @@ function clearMessages(){
 	document.getElementById('messages').innerHTML = '';
 }
 
-var buttonTest, buttonRock, buttonScissors, buttonPaper;
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+const buttonTest, buttonRock, buttonScissors, buttonPaper;
+const argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
 
 buttonTest = document.getElementById('button-test');
 buttonRock = document.getElementById('button-rock');
 buttonScissors = document.getElementById('button-paper');
 buttonPaper = document.getElementById('button-scissors');
 
-function buttonClicked(argButtonName, buttonPaper, buttonRock, buttonScissors, argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput){
+function buttonClicked(argButtonName, buttonPaper, buttonRock, buttonScissors, computerMove, playerMove, randomNumber, playerInput){
     clearMessages();
     console.log(argButtonName + ' został kliknięty");
     console.log(buttonPaper + ' został kliknięty");
